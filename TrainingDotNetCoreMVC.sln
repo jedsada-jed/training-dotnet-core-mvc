@@ -1,0 +1,17 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2017
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TrainingDotNetCoreMVC", "TrainingDotNetCoreMVC.csproj", "{970E6830-41FA-40D4-AB11-9F50D46F9FA8}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{970E6830-41FA-40D4-AB11-9F50D46F9FA8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{970E6830-41FA-40D4-AB11-9F50D46F9FA8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{970E6830-41FA-40D4-AB11-9F50D46F9FA8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{970E6830-41FA-40D4-AB11-9F50D46F9FA8}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
