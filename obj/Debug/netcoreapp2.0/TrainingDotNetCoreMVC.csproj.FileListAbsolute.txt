@@ -14,7 +14,6 @@
 /Users/jed/ProjectWeb/training-dotnet-core-mvc/bin/Debug/netcoreapp2.0/TrainingDotNetCoreMVC.runtimeconfig.dev.json
 /Users/jed/ProjectWeb/training-dotnet-core-mvc/bin/Debug/netcoreapp2.0/TrainingDotNetCoreMVC.dll
 /Users/jed/ProjectWeb/training-dotnet-core-mvc/bin/Debug/netcoreapp2.0/TrainingDotNetCoreMVC.pdb
-/Users/jed/ProjectWeb/training-dotnet-core-mvc/obj/Debug/netcoreapp2.0/TrainingDotNetCoreMVC.csprojResolveAssemblyReference.cache
 /Users/jed/ProjectWeb/training-dotnet-core-mvc/obj/Debug/netcoreapp2.0/TrainingDotNetCoreMVC.csproj.CoreCompileInputs.cache
 /Users/jed/ProjectWeb/training-dotnet-core-mvc/obj/Debug/netcoreapp2.0/TrainingDotNetCoreMVC.AssemblyInfoInputs.cache
 /Users/jed/ProjectWeb/training-dotnet-core-mvc/obj/Debug/netcoreapp2.0/TrainingDotNetCoreMVC.AssemblyInfo.cs

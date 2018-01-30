@@ -1,5 +1,15 @@
 ﻿<Properties StartupConfiguration="{970E6830-41FA-40D4-AB11-9F50D46F9FA8}|Default">
-  <MonoDevelop.Ide.Workbench />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Models/MovieModel.cs">
+    <Files>
+      <File FileName="Controllers/MovieController.cs" Line="27" Column="6" />
+      <File FileName="Repositories/MovieRepository.cs" Line="45" Column="1" />
+      <File FileName="Startup.cs" Line="38" Column="14" />
+      <File FileName="Models/ErrorViewModel.cs" Line="1" Column="1" />
+      <File FileName="Controllers/HomeController.cs" Line="1" Column="1" />
+      <File FileName="Views/Movie/Index.cshtml" Line="23" Column="32" />
+      <File FileName="Models/MovieModel.cs" Line="20" Column="1" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
