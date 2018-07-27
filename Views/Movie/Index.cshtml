@@ -1,6 +1,4 @@
-﻿@*
-    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
-*@
+﻿@model IEnumerable<TrainingDotNetCoreMVC.Models.MovieModel>
 @{
     ViewData["Title"] = "Movie index";
 }
@@ -14,24 +12,16 @@
         <th>หมวดหมู่</th>
         <th>ความยาว (นาที)</th>
     </tr>
-    <tr>
-        <td>1</td>
-        <td>9 ศาสตรา</td>
-        <td>
-            <img src="https://images.pexels.com/photos/2990/vintage-old-film.jpg?w=940&h=650&auto=compress&cs=tinysrgb" height="80px" />
-        </td>
-        <td>5 มกราคม 2561</td>
-        <td>แอนิเมชัน</td>
-        <td>107</td>
-    </tr>
-    <tr>
-        <td>2</td>
-        <td>อันธพาล</td>
-        <td>
-            <img src="https://images.pexels.com/photos/8827/road-man-lights-legs.jpg?w=940&h=650&auto=compress&cs=tinysrgb" height="80px" />
-        </td>
-        <td>14 มิถุนายน 2555</td>
-        <td>แอ็คชัน / ชีวิต</td>
-        <td>120</td>
-    </tr>
+    @foreach (var item in Model) {
+        <tr>
+            <td>@item.id</td>
+            <td>@item.title</td>
+            <td>
+                <img src="@item.coverImg" height="80px" />
+            </td>
+            <td>@item.releaseDate.Value.ToString("dd MMM yyyy")</td>
+            <td>@item.genre</td>
+            <td>@item.duration</td>
+        </tr>
+    }
 </table>

@@ -1,12 +1,10 @@
 ﻿using System;
+using System.ComponentModel.DataAnnotations;
+
 namespace TrainingDotNetCoreMVC.Models
 {
     public class MovieModel
     {
-        public MovieModel()
-        {
-        }
-
         public int id { get; set; }
         public string title { get; set; } 
         public string coverImg { get; set; }
