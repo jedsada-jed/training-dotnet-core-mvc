@@ -1,7 +1,10 @@
-﻿@{
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
     ViewData["Title"] = "Movie index";
 }
- <h1>@ViewData["Title"]</h1>
+<h1>@ViewData["Title"]</h1>
 <table class="table">
     <tr>
         <th>รหัสภาพยนต์</th>
@@ -11,17 +14,24 @@
         <th>หมวดหมู่</th>
         <th>ความยาว (นาที)</th>
     </tr>
-    @foreach (var d in ViewBag.movieList)  
-    {  
-        <tr>  
-            <td>@d.id</td>  
-            <td>@d.title</td>  
-            <td>
-                <img src=@d.coverImg height="80px">
-            </td>
-            <td>@d.releaseDate</td>  
-            <td>@d.genre</td>  
-            <td>@d.duration</td>  
-        </tr>  
-    }  
+    <tr>
+        <td>1</td>
+        <td>9 ศาสตรา</td>
+        <td>
+            <img src="https://images.pexels.com/photos/2990/vintage-old-film.jpg?w=940&h=650&auto=compress&cs=tinysrgb" height="80px" />
+        </td>
+        <td>5 มกราคม 2561</td>
+        <td>แอนิเมชัน</td>
+        <td>107</td>
+    </tr>
+    <tr>
+        <td>2</td>
+        <td>อันธพาล</td>
+        <td>
+            <img src="https://images.pexels.com/photos/8827/road-man-lights-legs.jpg?w=940&h=650&auto=compress&cs=tinysrgb" height="80px" />
+        </td>
+        <td>14 มิถุนายน 2555</td>
+        <td>แอ็คชัน / ชีวิต</td>
+        <td>120</td>
+    </tr>
 </table>
