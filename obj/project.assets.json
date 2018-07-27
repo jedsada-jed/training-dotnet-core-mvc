@@ -28531,11 +28531,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/jed/ProjectWeb/training-dotnet-core-mvc/TrainingDotNetCoreMVC.csproj",
+      "projectUniqueName": "/Users/jed/Desktop/ProjectWeb/training-dotnet-core-mvc/TrainingDotNetCoreMVC.csproj",
       "projectName": "TrainingDotNetCoreMVC",
-      "projectPath": "/Users/jed/ProjectWeb/training-dotnet-core-mvc/TrainingDotNetCoreMVC.csproj",
+      "projectPath": "/Users/jed/Desktop/ProjectWeb/training-dotnet-core-mvc/TrainingDotNetCoreMVC.csproj",
       "packagesPath": "/Users/jed/.nuget/packages/",
-      "outputPath": "/Users/jed/ProjectWeb/training-dotnet-core-mvc/obj",
+      "outputPath": "/Users/jed/Desktop/ProjectWeb/training-dotnet-core-mvc/obj",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"

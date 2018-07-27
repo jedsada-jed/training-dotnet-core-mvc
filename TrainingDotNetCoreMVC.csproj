@@ -15,9 +15,13 @@
 
   <ItemGroup>
     <Folder Include="Views\Movie\" />
-    <Folder Include="Repositories\" />
   </ItemGroup>
   <ItemGroup>
     <Compile Remove="myDB.cs" />
+    <Compile Remove="Repositories\MovieRepository.cs" />
+    <Compile Remove="Models\MovieModel.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="database\myDB.db" />
   </ItemGroup>
 </Project>

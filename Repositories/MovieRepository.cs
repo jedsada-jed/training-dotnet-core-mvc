@@ -29,11 +29,11 @@ namespace TrainingDotNetCoreMVC.Repositories
                     id = reader.GetInt16(0),
                     title = reader.GetString(1),
                     coverImg = reader.GetString(2),
-                    releaseDate = DateTime.ParseExact(reader.GetString(3), "yyyy-MMM-dd", CultureInfo.InvariantCulture),
+                    //releaseDate = DateTime.ParseExact(reader.Get String(3), "yyyy-MMM-dd", CultureInfo.InvariantCulture),
                     genre = reader.GetString(4),
                     duration = reader.GetInt32(5),
-                    createDate = DateTime.ParseExact(reader.GetString(6), "yyyy-MM-dd", CultureInfo.InvariantCulture),
-                    modifyDate = DateTime.ParseExact(reader.GetString(7), "yyyy-MM-dd", CultureInfo.InvariantCulture),
+                    //createDate = DateTime.ParseExact(reader.GetString(6), "yyyy-MM-dd", CultureInfo.InvariantCulture),
+                    //modifyDate = DateTime.ParseExact(reader.GetString(7), "yyyy-MM-dd", CultureInfo.InvariantCulture),
                 };
                 items.Add(item);
             }
