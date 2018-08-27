@@ -3,6 +3,8 @@
     ViewData["Title"] = "Movie index";
 }
 <h1>@ViewData["Title"]</h1>
+@Html.ActionLink( "+ เพิ่ม", "Create", "Movie", null, new { @class = "btn btn-primary", @style = "margin-bottom: 20px;" })
+<br>
 <table class="table">
     <tr>
         <th>รหัสภาพยนต์</th>
