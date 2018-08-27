@@ -2,6 +2,7 @@
 
   <PropertyGroup>
     <TargetFramework>netcoreapp2.0</TargetFramework>
+    <PackOnBuild>true</PackOnBuild>
   </PropertyGroup>
 
   <ItemGroup>
@@ -19,5 +20,14 @@
   <ItemGroup>
     <Compile Remove="myDB.cs" />
     <Compile Remove="Repositories\MovieRepository.cs" />
+    <Compile Remove="Views\Movie\Create.cshtml.cs" />
+    <Compile Remove="Views\Movie\Indexffe.cshtml.cs" />
+    <Compile Remove="Views\Movie\test.cshtml.cs" />
+    <Compile Remove="ViewModels\MovieViewModel.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Remove="Views\Movie\test.cshtml" />
+    <Content Remove="Views\Movie\ff.cshtml" />
+    <Content Remove="Views\Movie\Indexffe.cshtml" />
   </ItemGroup>
 </Project>
