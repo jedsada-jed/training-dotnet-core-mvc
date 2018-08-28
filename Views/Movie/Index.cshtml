@@ -3,7 +3,7 @@
     ViewData["Title"] = "Movie index";
 }
 <h1>@ViewData["Title"]</h1>
-@Html.ActionLink( "+ เพิ่ม", "Create", "Movie", null, new { @class = "btn btn-primary", @style = "margin-bottom: 20px;" })
+@Html.ActionLink("+ เพิ่ม", "Delete", "Movie", null, new { @class = "btn btn-primary", @style = "margin-bottom: 20px;" })
 <br>
 <table class="table">
     <tr>
@@ -13,10 +13,12 @@
         <th>เข้าฉายเมื่อ</th>
         <th>หมวดหมู่</th>
         <th>ความยาว (นาที)</th>
+        <th>ลบ</th>
     </tr>
-    @foreach (var item in Model) {
+    @foreach (var item in Model)
+    {
         <tr>
-            <td>@item.id</td>
+            <td class="item-id">@item.id</td>
             <td>@item.title</td>
             <td>
                 <img src="@item.coverImg" height="80px" />
@@ -24,6 +26,27 @@
             <td>@item.releaseDate.Value.ToString("dd MMM yyyy")</td>
             <td>@item.genre</td>
             <td>@item.duration</td>
+            <td>
+                <input type="button" value="Delete" class="btn btn-danger" />
+            </td>
         </tr>
     }
 </table>
+@using (Html.BeginForm("delete", "movie", FormMethod.Post, new { name = "frmMovie", id = "frmMovie" }))
+{
+    <input type="hidden" name="id" />
+}
+
+@section Scripts
+    {
+    <script>
+        $(".btn-danger").click(function () {
+            if(!confirm('Do you really want to delete this movie?')) {
+                return false;
+            }
+            var id = $(this).closest("tr").find(".item-id").text();
+            document.frmMovie.id.value = id;
+            document.getElementById("frmMovie").submit();
+        });
+    </script>
+}
