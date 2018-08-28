@@ -74,5 +74,14 @@ namespace TrainingDotNetCoreMVC.Controllers
             }
             return View();
         }
+
+        [HttpPost]
+        public ActionResult Delete(int id)
+        {
+            MovieModel movie = db.Movie.Find(id);
+            db.Movie.Remove(movie);
+            db.SaveChanges();
+            return RedirectToAction("Index");
+        }
     }
 }
