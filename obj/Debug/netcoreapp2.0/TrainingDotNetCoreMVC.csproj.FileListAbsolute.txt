@@ -9,3 +9,14 @@
 /Users/jed/Desktop/ProjectWeb/training-dotnet-core-mvc/obj/Debug/netcoreapp2.0/TrainingDotNetCoreMVC.dll
 /Users/jed/Desktop/ProjectWeb/training-dotnet-core-mvc/obj/Debug/netcoreapp2.0/TrainingDotNetCoreMVC.pdb
 /Users/jed/Desktop/ProjectWeb/training-dotnet-core-mvc/obj/Debug/netcoreapp2.0/TrainingDotNetCoreMVC.csprojAssemblyReference.cache
+/Users/jed/Desktop/backup/ProjectWeb/training-dotnet-core-mvc/bin/Debug/netcoreapp2.0/TrainingDotNetCoreMVC.deps.json
+/Users/jed/Desktop/backup/ProjectWeb/training-dotnet-core-mvc/bin/Debug/netcoreapp2.0/TrainingDotNetCoreMVC.runtimeconfig.json
+/Users/jed/Desktop/backup/ProjectWeb/training-dotnet-core-mvc/bin/Debug/netcoreapp2.0/TrainingDotNetCoreMVC.runtimeconfig.dev.json
+/Users/jed/Desktop/backup/ProjectWeb/training-dotnet-core-mvc/bin/Debug/netcoreapp2.0/TrainingDotNetCoreMVC.dll
+/Users/jed/Desktop/backup/ProjectWeb/training-dotnet-core-mvc/bin/Debug/netcoreapp2.0/TrainingDotNetCoreMVC.pdb
+/Users/jed/Desktop/backup/ProjectWeb/training-dotnet-core-mvc/obj/Debug/netcoreapp2.0/TrainingDotNetCoreMVC.csprojAssemblyReference.cache
+/Users/jed/Desktop/backup/ProjectWeb/training-dotnet-core-mvc/obj/Debug/netcoreapp2.0/TrainingDotNetCoreMVC.csproj.CoreCompileInputs.cache
+/Users/jed/Desktop/backup/ProjectWeb/training-dotnet-core-mvc/obj/Debug/netcoreapp2.0/TrainingDotNetCoreMVC.AssemblyInfoInputs.cache
+/Users/jed/Desktop/backup/ProjectWeb/training-dotnet-core-mvc/obj/Debug/netcoreapp2.0/TrainingDotNetCoreMVC.AssemblyInfo.cs
+/Users/jed/Desktop/backup/ProjectWeb/training-dotnet-core-mvc/obj/Debug/netcoreapp2.0/TrainingDotNetCoreMVC.dll
+/Users/jed/Desktop/backup/ProjectWeb/training-dotnet-core-mvc/obj/Debug/netcoreapp2.0/TrainingDotNetCoreMVC.pdb
