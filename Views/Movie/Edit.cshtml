@@ -1,0 +1,74 @@
+﻿@model TrainingDotNetCoreMVC.Models.MovieModel
+@{
+    ViewBag.Title = "Create";
+}
+@section Styles
+{
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.47/css/bootstrap-datetimepicker.min.css" />
+}
+<h2>Create</h2>
+@using (Html.BeginForm("create", "movie", FormMethod.Post, new { enctype = "multipart/form-data" }))
+{
+    <div class="form-group">
+        @Html.LabelFor(model => model.title, "ชื่อภาพยนตร์")
+        @Html.TextBoxFor(model => model.title, new { @class = "form-control", placeholder = "กรอกชื่อภาพยนตร์" })
+        @Html.ValidationMessageFor(model => model.title, "", new { @class = "text-danger" })
+    </div>
+    <div class="form-group">
+        @Html.LabelFor(model => model.releaseDate, "เข้าฉายเมื่อ")
+        <div class='input-group date' id='dtReleaseDate'>
+            @Html.TextBoxFor(model => model.releaseDate, new { @class = "form-control", placeholder = "กรอกเวลาเข้าฉาย" })
+            @Html.ValidationMessageFor(model => model.releaseDate, "", new { @class = "text-danger" })
+            <span class="input-group-addon">
+                <span class="glyphicon glyphicon-calendar"></span>
+            </span>
+        </div>
+    </div>
+    <div class="form-group">
+        @Html.LabelFor(model => model.genre, "หมวดหมู่")
+        @Html.DropDownListFor(m => m.genre, new List<SelectListItem>
+        {
+            new SelectListItem { Text="Action", Value="Action" },
+            new SelectListItem { Text="Drama", Value="Drama" }
+        }, "กรุณาเลือก", new { @class = "form-control" })
+        @Html.ValidationMessageFor(model => model.genre, "", new { @class = "text-danger" })
+    </div>
+    <div class="form-group">
+        @Html.LabelFor(model => model.duration, "ความยาว(นาที)")
+        @Html.TextBoxFor(model => model.duration, new { @class = "form-control", placeholder = "กรอกความยาว(นาที)", type = "number" })
+        <lable class="text-danger">
+            @Html.ValidationMessage("errDuration")
+        </lable>
+    </div>
+    <div class="form-group">
+        @Html.Label("fileCoverImg", "รูปภาพ")
+        <input type="file" id="fileUpload" name="fileUpload" class="form-control" />
+        <lable class="text-danger">
+            @Html.ValidationMessage("errFileUpload")
+        </lable>
+    </div>
+    <div class=form-group>
+        <input onclick="return validateOnSubmit()" type="submit" value="Create" class="btn btn-primary" />
+    </div>
+}
+@section Scripts
+{
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.47/js/bootstrap-datetimepicker.min.js"></script>
+    <script type="text/javascript">$(function() {
+            $('#dtReleaseDate').datetimepicker({
+                defaultDate: new Date(),
+            });
+        });
+        function validateOnSubmit() {
+            if (!$('#fileUpload').val()) {
+                $('span[data-valmsg-for="errFileUpload"]').text('The file upload is required.');
+            }
+
+            if (!$('#duration').val()) {
+                $('span[data-valmsg-for="errDuration"]').text('The duration is required.');
+            }
+        }</script>
+    <script src="https://ajax.aspnetcdn.com/ajax/jquery.validate/1.16.0/jquery.validate.min.js"></script>
+    <script src="https://ajax.aspnetcdn.com/ajax/jquery.validation.unobtrusive/3.2.6/jquery.validate.unobtrusive.min.js"></script>
+}

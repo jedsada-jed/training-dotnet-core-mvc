@@ -83,5 +83,11 @@ namespace TrainingDotNetCoreMVC.Controllers
             db.SaveChanges();
             return RedirectToAction("Index");
         }
+
+        public ActionResult Edit(int id)
+        {
+            MovieModel movie = db.Movie.Find(id);
+            return View(movie);
+        }
     }
 }
