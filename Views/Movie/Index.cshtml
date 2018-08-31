@@ -13,6 +13,7 @@
         <th>เข้าฉายเมื่อ</th>
         <th>หมวดหมู่</th>
         <th>ความยาว (นาที)</th>
+        <th>แก้ไข</th>
         <th>ลบ</th>
     </tr>
     @foreach (var item in Model)
@@ -26,6 +27,9 @@
             <td>@item.releaseDate.Value.ToString("dd MMM yyyy")</td>
             <td>@item.genre</td>
             <td>@item.duration</td>
+            <td>
+                @Html.ActionLink("Edit", "Edit", new { id = item.id }, new { id = item.id, @class = "btn btn-primary", @style = "margin-bottom: 20px;" })
+            </td>
             <td>
                 <input type="button" value="Delete" class="btn btn-danger" />
             </td>
